@@ -1,17 +1,13 @@
 body {
   min-height: 1500px;
 }
+
 .container {
-  margin-top: 30px;
-  top: 30px;
+  padding-top: 10%;
 }
 
 .profile {
   width: 200px;
-}
-
-.progress {
-  height: 2px;
 }
 
 .bi {
@@ -37,15 +33,6 @@ hr {
   font-weight: 500;
 }
 
-/* .garis{
-  height: 200px;
-  background-color: blue;
-} */
-
-ul {
-  font-size: 2rem;
-}
-
 .whatsapp {
   color: #50cc5d;
 }
@@ -58,21 +45,32 @@ ul {
   color: #1d9bf0;
 }
 
-li {
-  list-style: none;
-  padding-bottom: 2rem;
+ul li {
+  list-style-type: none;
+  padding-bottom: 1rem;
   position: relative;
+  box-sizing: border-box;
+  font-size: 2rem;
 }
 
-/* li::before {
+ul li::before {
   content: "";
-  width: 10px;
-  background-color: orange;
-  margin-right: 10px;
-  position:absolute;
-} */
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: -21px;
+  background-color: gray;
+  margin-top: 20px;
+}
 
-.mylist {
-  width: 10px;
-  background-color: orange;
+ul li::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  border-radius: 50%;
+  background-color: blue;
+  top: 15px;
+  filter: drop-shadow(0 0 0.25rem gray);
 }
