@@ -1,5 +1,5 @@
 body {
-  min-height: 1500px;
+  min-height: 2000px;
 }
 
 .container {
@@ -45,7 +45,7 @@ hr {
   color: #1d9bf0;
 }
 
-ul li {
+.pd li {
   list-style-type: none;
   padding-bottom: 1rem;
   position: relative;
@@ -53,7 +53,7 @@ ul li {
   font-size: 2rem;
 }
 
-ul li::before {
+.pd li::before {
   content: "";
   position: absolute;
   width: 2px;
@@ -73,4 +73,31 @@ ul li::after {
   background-color: blue;
   top: 15px;
   filter: drop-shadow(0 0 0.25rem gray);
+}
+
+dt {
+  font-size: 2rem;
+  color: orange;
+  position: relative;
+}
+
+dt::before {
+  content: "";
+  width: 10px;
+  height: 100px;
+  left: -15px;
+  position: absolute;
+  background-color: red;
+  opacity: 50%;
+}
+
+dd {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+dl p {
+  text-align: justify;
+  line-height: 30px;
+  font-size: 1.2rem;
 }
