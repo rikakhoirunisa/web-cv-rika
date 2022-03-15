@@ -35,6 +35,10 @@ hr {
   font-weight: 500;
 }
 
+.display-3 {
+  font-weight: 500;
+}
+
 .whatsapp {
   color: #50cc5d;
 }
@@ -138,4 +142,13 @@ ol li::before {
   left: -36px;
   top: -5px;
   border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .min {
+    padding-top: 20px;
+  }
+  .min .txt {
+    text-align: center;
+  }
 }
