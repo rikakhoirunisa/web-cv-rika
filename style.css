@@ -1,5 +1,7 @@
 body {
   min-height: 2000px;
+
+  background-image: linear-gradient(lavender, ivory, aliceblue);
 }
 
 .container {
@@ -79,16 +81,17 @@ dt {
   font-size: 2rem;
   color: orange;
   position: relative;
+  padding-left: 20px;
 }
 
 dt::before {
   content: "";
   width: 10px;
-  height: 100px;
-  left: -15px;
+  height: 100%;
+  left: 0;
   position: absolute;
-  background-color: red;
-  opacity: 50%;
+  background-color: lightgray;
+  opacity: 75%;
 }
 
 dd {
@@ -100,4 +103,39 @@ dl p {
   text-align: justify;
   line-height: 30px;
   font-size: 1.2rem;
+}
+
+.bi-pencil {
+  position: relative;
+  right: 15px;
+}
+
+.bi-screwdriver {
+  position: relative;
+  left: 20px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+ol li {
+  padding-bottom: 2rem;
+}
+
+ol li {
+  position: relative;
+  padding-left: 10px;
+}
+
+ol li::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  background-color: blueviolet;
+  z-index: -1;
+  left: -36px;
+  top: -5px;
+  border-radius: 20px;
 }
